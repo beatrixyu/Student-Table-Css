@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FBW6 Student Info</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <style rel="stylesheet" type="text/css">
+        aside {
+            background-color: rgb(158, 196, 196);
+        }
+
+        article {
+            background-color: rgb(144, 114, 150);
+        }
+
+        details[open] {
+            border: 2px dashed blueviolet;
+        }
+
+        summary[open] {
+            border: 2px none blueviolet;
+        }
+
+        dialog {
+            border: 3px dotted rgb(219, 40, 70);
+        }
+
+        [logo-icon] {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 4px solid rgb(92, 91, 91);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 24px;
+            font-weight: bolder;
+            transition: all .5s ease;
+        }
+
+        [logo-text] {
+            font-size: 30px;
+        }
+
+        [logo-icon]:hover {
+            background: #293d3d;
+            color: white;
+            border: #293d3d;
+        }
+
+        [logo-text],
+        [backlink],
+        nav {
+            text-decoration: none;
+            text-shadow: 1px 1px rgb(196, 192, 192);
+        }
+
+        [backlink] {
+            position: absolute;
+            left: 85%;
+            transform: translateX(-50%);
+        }
+
+        [logo-text],
+        [backlink],
+        nav {
+            text-decoration: none;
+            text-shadow: 1px 1px rgb(196, 192, 192);
+        }
+
+        [backlink] ul li {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 30px;
+            margin-left: 50px;
+        }
+
+
+        [backlink] a {
+            text-decoration: none;
+            color: rgb(92, 91, 91);
+        }
+
+        [backlink] ul li:hover {
+            font-size: 30px;
+            color: #293d3d;
+        }
+
+        /* Table part */
+        table,
+        th,
+        td,
+        tr,
+        thead {
+            /* position: center; */
+
+            border-collapse: collapse;
+            border: 2px none rgb(159, 157, 163, 0.6, 4px);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 15px 15px;
+            padding: 15px;
+            font-size: 18px;
+
+        }
+
+        th,
+        td {
+            width: 150px;
+        }
+
+        [photo] {
+            font-size: 30px;
+            height: 150px;
+            border: 5px dashed rgb(97, 116, 119, 0.3);
+            margin: 10px;
+            color: rgb(75, 72, 72);
+
+        }
+
+
+        body {
+            background-color: rgb(235, 220, 202)
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
+        }
+
+        table {
+            width: 300px;
+            border-radius: 3%;
+
+
+            box-shadow: 4px 5px 4px #a8a895;
+            text-shadow: 2px 2px 4px #8d8989;
+            color: rgb(55, 51, 56);
+
+        }
+
+        footer~h3 {
+            width: 100%;
+            text-align: center;
+
+            font-size: 20px;
+            font-family: 'Unlock', cursive;
+        }
+
+        article+h1 {
+            text-align: center;
+            color: #269292;
+            font-size: 20px;
+        }
+
+
+
+        footer[backlink] {
+            position: sticky;
+            position: -webkit-sticky;
+            bottom: 0;
+            background: rgba(250, 250, 250, 0.8);
+        }
+    </style>
+</head>
+<header>
+    <div class="logo">
+        <a href="">
+            <div logo-icon>DCI</div>
+            <div logo-text>FBW6</div>
+        </a>
+    </div>
+
+
+    <nav backlink>
+        <ul>
+            <li><a href="#experience">Home</a></li>
+            <li><a href="#contact">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- <li><a href="https://www.linkedin.com/in/beatrix-m-b-66b081a8/" target="_blank"></a>Language</a></li>
+                <li><a href="https://www.xing.com/profile/BeatrixM_Blome/cv?sc_o=mxb_p" target="_blank">Help Center</a></li> -->
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+    <main>
+        <div>
+            <table table style="background-color: rgb(182, 170, 190)">
+                <thead colspan="2">
+                    <th colspan="2"><img src="./3-104.jpg" photo></th>
+                </thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Bea Blome</td>
+                </tr>
+                <tr>
+                    <td>Hometown</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Genda</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>beablome@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Attendence</td>
+                    <td><meter value="8" min="0" max="10">8 out of 10</meter><br></td>
+                    <!-- <td><meter value="0.6">60%</meter></td> -->
+            </table>
+        </div>
+
+        <div>
+
+            <table table style="background-color: rgb(170, 175, 190)">
+                <thead colspan="2">
+                    <th colspan="2"><img src="./3-104.jpg" photo></th>
+                </thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Bea Blome</td>
+                </tr>
+                <tr>
+                    <td>Hometown</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Genda</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>beablome@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Attendence</td>
+                    <td><meter value="5" min="0" max="10">5 out of 10</meter><br></td>
+                    <!-- <td><meter value="0.6">60%</meter></td> -->
+            </table>
+        </div>
+
+        <div>
+
+
+            <table table style="background-color: rgb(170, 189, 190)">
+                <thead colspan="2">
+                    <th colspan="2"><img src="./3-104.jpg" photo></th>
+                </thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Bea Blome</td>
+                </tr>
+                <tr>
+                    <td>Hometown</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Genda</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>beablome@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Attendence</td>
+                    <td><meter value="7" min="0" max="10">7 out of 10</meter><br></td>
+                    <!-- <td><meter value="0.6">60%</meter></td> -->
+            </table>
+        </div>
+        <div>
+
+            <table table style="background-color: rgb(170, 190, 175)">
+                <thead colspan="2">
+                    <th colspan="2"><img src="./3-104.jpg" photo></th>
+                </thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Bea Blome</td>
+                </tr>
+                <tr>
+                    <td>Hometown</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Genda</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>beablome@gmail.com</td>
+                <tr>
+                    <td>Attendence</td>
+                    <td><meter value="4" min="0" max="10">4 out of 10</meter><br></td>
+                    <!-- <td><meter value="0.6">60%</meter></td> -->
+                </tr>
+            </table>
+        </div>
+        <div>
+
+            <table table style="background-color: rgb(190, 175, 170)">
+                <thead colspan="2">
+                    <th colspan="2"><img src="./3-104.jpg" photo></th>
+                </thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Bea Blome</td>
+                </tr>
+                <tr>
+                    <td>Hometown</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Genda</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>beablome@gmail.com</td>
+                </tr>
+                <td>Attendence</td>
+                <td><meter value="5" min="0" max="10">5 out of 10</meter><br></td>
+                <!-- <td><meter value="0.6">60%</meter></td> -->
+            </table>
+        </div>
+        <div>
+
+            <table table style="background-color: rgb(190, 170, 181)">
+                <thead colspan="2">
+                    <th colspan="2"><img src="./3-104.jpg" photo></th>
+                </thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Bea Blome</td>
+                </tr>
+                <tr>
+                    <td>Hometown</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Genda</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>beablome@gmail.com</td>
+                </tr>
+                <td>Attendence</td>
+                <td><meter value="5" min="0" max="10">5 out of 10</meter><br></td>
+                <!-- <td><meter value="0.6">60%</meter></td> -->
+            </table>
+        </div>
+
+        <table table style="background-color: rgb(182, 170, 190)">
+            <thead colspan="2">
+                <th colspan="2"><img src="./3-104.jpg" photo></th>
+            </thead>
+            <tr>
+                <td>Name</td>
+                <td>Bea Blome</td>
+            </tr>
+            <tr>
+                <td>Hometown</td>
+                <td>China</td>
+            </tr>
+            <tr>
+                <td>Genda</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>beablome@gmail.com</td>
+            </tr>
+            <td>Attendence</td>
+            <td><meter value="5" min="0" max="10">5 out of 10</meter><br></td>
+            <!-- <td><meter value="0.6">60%</meter></td> -->
+        </table>
+        </div>
+
+        <div>
+
+            <table table style="background-color: rgb(170, 175, 190)">
+                <thead colspan="2">
+                    <th colspan="2"><img src="./3-104.jpg" photo></th>
+                </thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Bea Blome</td>
+                </tr>
+                <tr>
+                    <td>Hometown</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Genda</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>beablome@gmail.com</td>
+                </tr>
+                <td>Attendence</td>
+                <td><meter value="5" min="0" max="10">5 out of 10</meter><br></td>
+                <!-- <td><meter value="0.6">60%</meter></td> -->
+            </table>
+        </div>
+
+        <div>
+
+
+            <table table style="background-color: rgb(170, 189, 190)">
+                <thead colspan="2">
+                    <th colspan="2"><img src="./3-104.jpg" photo></th>
+                </thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Bea Blome</td>
+                </tr>
+                <tr>
+                    <td>Hometown</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Genda</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>beablome@gmail.com</td>
+                </tr>
+                <td>Attendence</td>
+                <td><meter value="5" min="0" max="10">5 out of 10</meter><br></td>
+                <!-- <td><meter value="0.6">60%</meter></td> -->
+            </table>
+        </div>
+        <div>
+
+            <table table style="background-color: rgb(170, 190, 175)">
+                <thead colspan="2">
+                    <th colspan="2"><img src="./3-104.jpg" photo></th>
+                </thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Bea Blome</td>
+                </tr>
+                <tr>
+                    <td>Hometown</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Genda</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>beablome@gmail.com</td>
+                </tr>
+                <td>Attendence</td>
+                <td><meter value="5" min="0" max="10">5 out of 10</meter><br></td>
+                <!-- <td><meter value="0.6">60%</meter></td> -->
+            </table>
+        </div>
+        <div>
+
+            <table table style="background-color: rgb(190, 175, 170)">
+                <thead colspan="2">
+                    <th colspan="2"><img src="./3-104.jpg" photo></th>
+                </thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Bea Blome</td>
+                </tr>
+                <tr>
+                    <td>Hometown</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Genda</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>beablome@gmail.com</td>
+                </tr>
+                <td>Attendence</td>
+                <td><meter value="5" min="0" max="10">5 out of 10</meter><br></td>
+                <!-- <td><meter value="0.6">60%</meter></td> -->
+            </table>
+            <td><meter value="8" min="0" max="10">8 out of 10</meter><br></td>
+        </div>
+        <div>
+
+            <table table style="background-color: rgb(190, 170, 181)">
+                <thead colspan="2">
+                    <th colspan="2"><img src="./3-104.jpg" photo></th>
+                </thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Bea Blome</td>
+                </tr>
+                <tr>
+                    <td>Hometown</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Genda</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>beablome@gmail.com</td>
+                </tr>
+                <td>Attendence</td>
+                <td><meter value="5" min="0" max="10">5 out of 10</meter><br></td>
+                <!-- <td><meter value="0.6">60%</meter></td> -->
+            </table>
+        </div>
+
+
+
+
+
+
+        </mian>
+</body>
+
+</html>
